@@ -1,0 +1,105 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+#products-view {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 100px;
+  }
+  
+  #products-view td, #products-view th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #products-view tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #products-view tr:hover {background-color: #ddd;}
+  
+  #products-view th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #2962FF;
+    color: white;
+  }
+
+  #controls{
+      text-align: center;
+  }
+
+   button{
+    border-radius: 30px;
+    background-color: #2962FF;
+    color: #FFFFFF;
+    border: none;
+    padding: 20px;
+    font-weight: bold;
+    margin: 10px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+   button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #002DA9;
+    border: none;
+  }
+
+button:active,button:visited{
+border:none;
+  }
+  
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #logo{
+    text-align: center;
+    background-color: #2962FF;
+    color: #FFFFFF;
+    padding: 10px;
+  }
