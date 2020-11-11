@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Add Product</title>
+</head>
+<body>
+  <h1 id="logo">AIWA PHARMACY Product Manager</h1>
+    <table id="products-view">
+    </table>
+    <div id="controls">
+        <button id="category">New Category</button>
+        <button id="removeCategory">Remove Category</button>
+        <button id="element">Add Element</button>
+        <button id="removeElement">Remove Element</button>
+        <button onclick="downloadJson()">Download json</button>
+    </div>
+<div id="addCategory" class="modal">
+  <div class="modal-content">
+    
+    <span class="close">&times;</span>
+    <center>
+      <h2>
+        Enter new category name
+      </h2>
+    <input type="text" id="categoryName" placeholder="category name"> <br>
+    <button onclick="addProductCategory()">Save</button>
+  </center>
+  </div>
+</div>
+<div id="addElement" class="modal">
+  <div class="modal-content">
+    
+    <span class="close">&times;</span>
+    <center>
+    <h2>
+Add New Item
+    </h2>
+    Category
+    <select id="categoryOptions">
+    </select>
+    <br>
+    Name<input type="text" id="itemName" placeholder="item name"> <br>
+    Image<input type="text" id="image" placeholder="item image file name"> <br>
+    Price<input type="text" id="price" placeholder="item price"> <br>
+    <button onclick="addElement()">Save</button>
+  </center>
+  </div>
+</div>
+<div id="removeElementDiv" class="modal">
+  <div class="modal-content">
+    
+    <span class="close">&times;</span>
+    <center>
+      Select Item
+    <br>
+    <select id="itemOptions">
+    </select>
+    <br>
+    <button onclick="removeElement()">Save</button>
+  </center>
+  </div>
+</div>
+<div id="removeCategoryDiv" class="modal">
+  <div class="modal-content">
+    
+    <span class="close">&times;</span>
+    <center>
+    Select Category to remove<select id="categoryOptionsRemove">
+    </select>
+    <br>
+    <button onclick="removeCategory()">Remove</button>
+  </center>
+  </div>
+</div>
+<script src="export_to_json.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
